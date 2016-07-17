@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PAD</string>
+    <string name="app_report_list">Report target list</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_report">Report</string>
+    
+</resources>

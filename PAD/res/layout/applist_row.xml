@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/app_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/app_icon"
+        android:text="TextView" />
+
+    <ProgressBar
+        android:id="@+id/app_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/app_name"
+        android:layout_below="@+id/app_name"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/app_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/app_progress"
+        android:layout_alignRight="@+id/app_progress"
+        android:layout_marginRight="15dp"
+        android:text="TextView" />
+
+</RelativeLayout>
