@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Pie Charts</title>
+	<link rel="stylesheet" type="text/css" href="/bootstrap/bootstrap.min.css">
+	<style type="text/css">
+	#piechart, #rowchart, #barchart {
+		width: 550px;
+		height: 300px;
+	}
+	#barchart {
+		width: 400px;
+		height: 300px;
+	}
+	.container {
+		margin: auto;
+	}
+
+	#footer, #upload-time {
+		text-align: center;
+	}
+	</style>
+	<script language="javascript" type="text/javascript" src="/javascripts/jquery-2.1.3.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/javascripts/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="/javascripts/jquery.flot.pie.js"></script>
+	<script language="javascript" type="text/javascript" src="/javascripts/jquery.flot.stack.js"></script>
+	<script language="javascript" type="text/javascript" src="/bootstrap/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/javascripts/index.js"></script>
+	<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../../excanvas.min.js"></script><![endif]-->
+	
+</head>
+<body>
+<div class="container">
+	<div class="col-md-6 form-group">
+    	<div class="page-header">
+  			<h1>Today's App Usage <small id="total-time">共 1時1分1秒</small></h1>
+		</div>
+		<div id="piechart"></div>
+		<h4 id="total-time"></h4>
+		<div id="rowchart"></div>
+	</div>
+	<div class="col-md-6 form-group">
+   		<div class="page-header">
+  			<h1>Today's Phone Use Count</h1>
+		</div>
+		<div id="barchart"></div>
+		<blockquote>
+  			<p>台灣APP使用者的平均每天使用APP時間以達132分鐘，20-34年齡層的使用者平均使用時間更高達150分鐘以上。</p>
+  			<footer>2014台灣消費者行動裝置暨APP使用行為調查報告, <cite title="Source Title">資策會FIND</cite></footer>
+		</blockquote>
+	</div>	
+</div>
+<h4 id="upload-time">更新時間</h4>
+<div id="footer">
+		Copyright &copy; 2014 - 2015 Phone Addiction Defender
+</div>
+</body>
+</html>
